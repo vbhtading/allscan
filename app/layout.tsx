@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col bg-[#070b14] text-zinc-200">
+      <body className="min-h-full flex flex-col bg-[#070b14] text-zinc-200" suppressHydrationWarning>
         {children}
         <Toaster position="top-center" richColors closeButton theme="dark" />
       </body>
